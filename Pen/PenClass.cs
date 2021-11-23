@@ -71,18 +71,11 @@ namespace Pen
         }
 
         public String getColor()
-        {
-            //if (color != null)
-            //{
-            //    return color;
-            //}
-            //else
-            //{
-            //    return "BLUE";
-            //}
+        {            
             return "BLUE";
             //Bug1
-            //should fix            
+            //should fix
+            //return color;
         }
 
         public Boolean isWork()
