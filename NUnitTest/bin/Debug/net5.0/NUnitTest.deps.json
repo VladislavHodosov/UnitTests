@@ -6,24 +6,24 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "TestsforPen/1.0.0": {
+      "NUnitTest/1.0.0": {
         "dependencies": {
-          "MSTest.TestFramework": "2.2.10",
-          "Microsoft.NET.Test.Sdk": "17.3.1",
+          "Microsoft.NET.Test.Sdk": "16.11.0",
+          "NUnit": "3.13.2",
+          "NUnit3TestAdapter": "4.0.0",
           "Pen": "1.0.0",
-          "coverlet.collector": "3.1.2",
-          "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions": "14.0.0.0"
+          "coverlet.collector": "3.1.0"
         },
         "runtime": {
-          "TestsforPen.dll": {}
+          "NUnitTest.dll": {}
         }
       },
-      "coverlet.collector/3.1.2": {},
-      "Microsoft.CodeCoverage/17.3.1": {
+      "coverlet.collector/3.1.0": {},
+      "Microsoft.CodeCoverage/16.11.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.300.622.32707"
+            "fileVersion": "16.1000.21.27002"
           }
         }
       },
@@ -47,17 +47,17 @@
           "System.Threading": "4.0.11"
         }
       },
-      "Microsoft.NET.Test.Sdk/17.3.1": {
+      "Microsoft.NET.Test.Sdk/16.11.0": {
         "dependencies": {
-          "Microsoft.CodeCoverage": "17.3.1",
-          "Microsoft.TestPlatform.TestHost": "17.3.1"
+          "Microsoft.CodeCoverage": "16.11.0",
+          "Microsoft.TestPlatform.TestHost": "16.11.0"
         }
       },
-      "Microsoft.NETCore.Platforms/1.0.1": {},
+      "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.0.1": {},
-      "Microsoft.TestPlatform.ObjectModel/17.3.1": {
+      "Microsoft.TestPlatform.ObjectModel/16.11.0": {
         "dependencies": {
-          "NuGet.Frameworks": "5.11.0",
+          "NuGet.Frameworks": "5.0.0",
           "System.Reflection.Metadata": "1.6.0"
         },
         "runtime": {
@@ -155,9 +155,9 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/17.3.1": {
+      "Microsoft.TestPlatform.TestHost/16.11.0": {
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "17.3.1",
+          "Microsoft.TestPlatform.ObjectModel": "16.11.0",
           "Newtonsoft.Json": "9.0.1"
         },
         "runtime": {
@@ -302,12 +302,9 @@
           }
         }
       },
-      "MSTest.TestFramework/2.2.10": {
-        "runtime": {
-          "lib/net5.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {
-            "assemblyVersion": "14.0.0.0",
-            "fileVersion": "14.0.7126.11"
-          }
+      "NETStandard.Library/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -342,31 +339,43 @@
           }
         }
       },
-      "NuGet.Frameworks/5.11.0": {
+      "NuGet.Frameworks/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
-            "assemblyVersion": "5.11.0.10",
-            "fileVersion": "5.11.0.10"
+            "assemblyVersion": "5.0.0.6",
+            "fileVersion": "5.0.0.5923"
           }
         }
       },
+      "NUnit/3.13.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {
+            "assemblyVersion": "3.13.2.0",
+            "fileVersion": "3.13.2.0"
+          }
+        }
+      },
+      "NUnit3TestAdapter/4.0.0": {},
       "System.Collections/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Diagnostics.Debug/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Diagnostics.Tools/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -392,14 +401,14 @@
       },
       "System.Globalization/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.IO/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0",
           "System.Text.Encoding": "4.0.11",
@@ -408,7 +417,7 @@
       },
       "System.IO.FileSystem/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.IO": "4.1.0",
           "System.IO.FileSystem.Primitives": "4.0.1",
@@ -464,7 +473,7 @@
       },
       "System.Reflection/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.IO": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
@@ -497,7 +506,7 @@
       },
       "System.Reflection.Extensions/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
@@ -506,7 +515,7 @@
       "System.Reflection.Metadata/1.6.0": {},
       "System.Reflection.Primitives/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -519,7 +528,7 @@
       },
       "System.Resources.ResourceManager/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Globalization": "4.0.11",
           "System.Reflection": "4.1.0",
@@ -528,27 +537,27 @@
       },
       "System.Runtime/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
       "System.Runtime.Extensions/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Runtime.Handles/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Runtime.InteropServices/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Reflection": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
@@ -564,14 +573,14 @@
       },
       "System.Text.Encoding/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
       },
       "System.Text.Encoding.Extensions/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0",
           "System.Text.Encoding": "4.0.11"
@@ -595,7 +604,7 @@
       },
       "System.Threading.Tasks/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.0.1",
           "System.Runtime": "4.1.0"
         }
@@ -646,36 +655,28 @@
         "runtime": {
           "Pen.dll": {}
         }
-      },
-      "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions/14.0.0.0": {
-        "runtime": {
-          "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll": {
-            "assemblyVersion": "14.0.0.0",
-            "fileVersion": "14.0.7126.11"
-          }
-        }
       }
     }
   },
   "libraries": {
-    "TestsforPen/1.0.0": {
+    "NUnitTest/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "coverlet.collector/3.1.2": {
+    "coverlet.collector/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wuLDIDKD5XMt0A7lE31JPenT7QQwZPFkP5rRpdJeblyXZ9MGLI8rYjvm5fvAKln+2/X+4IxxQDxBtwdrqKNLZw==",
-      "path": "coverlet.collector/3.1.2",
-      "hashPath": "coverlet.collector.3.1.2.nupkg.sha512"
+      "sha512": "sha512-YzYqSRrjoP5lULBhTDcTOjuM4IDPPi6PhFsl4w8EI4WdZhE6llt7E38Tg4CHyrS+QKwyu1+9OwkdDgluOdoBTw==",
+      "path": "coverlet.collector/3.1.0",
+      "hashPath": "coverlet.collector.3.1.0.nupkg.sha512"
     },
-    "Microsoft.CodeCoverage/17.3.1": {
+    "Microsoft.CodeCoverage/16.11.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WqB7Ik4v8ku0Y9HZShqTStZdq8R1lyhsZr7IMp8zV/OcL5sHVYvlMnardQR+SDQc3dmbniCIl9mYxYM+V7x8MA==",
-      "path": "microsoft.codecoverage/17.3.1",
-      "hashPath": "microsoft.codecoverage.17.3.1.nupkg.sha512"
+      "sha512": "sha512-wf6lpAeCqP0KFfbDVtfL50lr7jY1gq0+0oSphyksfLOEygMDXqnaxHK5LPFtMEhYSEtgXdNyXNnEddOqQQUdlQ==",
+      "path": "microsoft.codecoverage/16.11.0",
+      "hashPath": "microsoft.codecoverage.16.11.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.0.1": {
       "type": "package",
@@ -684,19 +685,19 @@
       "path": "microsoft.csharp/4.0.1",
       "hashPath": "microsoft.csharp.4.0.1.nupkg.sha512"
     },
-    "Microsoft.NET.Test.Sdk/17.3.1": {
+    "Microsoft.NET.Test.Sdk/16.11.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jH9W5uYannaJ3HhrPBkzSidf3WkqP6XI+Yke0ODYVuFWM6GLVtBAyNgXvU/uQXPBsHq4aysLTsrN1FvG2hlKoQ==",
-      "path": "microsoft.net.test.sdk/17.3.1",
-      "hashPath": "microsoft.net.test.sdk.17.3.1.nupkg.sha512"
+      "sha512": "sha512-f4mbG1SUSkNWF5p7B3Y8ZxMsvKhxCmpZhdl+w6tMtLSUGE7Izi1syU6TkmKOvB2BV66pdbENConFAISOix4ohQ==",
+      "path": "microsoft.net.test.sdk/16.11.0",
+      "hashPath": "microsoft.net.test.sdk.16.11.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/1.0.1": {
+    "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2G6OjjJzwBfNOO8myRV/nFrbTw5iA+DEm0N+qUqhrOmaVtn4pC77h38I1jsXGw5VH55+dPfQsqHD0We9sCl9FQ==",
-      "path": "microsoft.netcore.platforms/1.0.1",
-      "hashPath": "microsoft.netcore.platforms.1.0.1.nupkg.sha512"
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.0.1": {
       "type": "package",
@@ -705,26 +706,26 @@
       "path": "microsoft.netcore.targets/1.0.1",
       "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.ObjectModel/17.3.1": {
+    "Microsoft.TestPlatform.ObjectModel/16.11.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-n1WSFCMiFt6KmD5JzV+Wye5Ntomez3YP2+d15bu5PS5Z1U0g+V7VBLdJIaJRnahz5BsXJDTnLYNVOUdntwjx6Q==",
-      "path": "microsoft.testplatform.objectmodel/17.3.1",
-      "hashPath": "microsoft.testplatform.objectmodel.17.3.1.nupkg.sha512"
+      "sha512": "sha512-EiknJx9N9Z30gs7R+HHhki7fA8EiiM3pwD1vkw3bFsBC8kdVq/O7mHf1hrg5aJp+ASO6BoOzQueD2ysfTOy/Bg==",
+      "path": "microsoft.testplatform.objectmodel/16.11.0",
+      "hashPath": "microsoft.testplatform.objectmodel.16.11.0.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.TestHost/17.3.1": {
+    "Microsoft.TestPlatform.TestHost/16.11.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-co/GMz6rGxpzn2aJYTDDim61HvEk+SHBVtbXnu2RSrz20HxkaraEh0kltCsMkmLAX/6Hz5sa6NquLngBlURTow==",
-      "path": "microsoft.testplatform.testhost/17.3.1",
-      "hashPath": "microsoft.testplatform.testhost.17.3.1.nupkg.sha512"
+      "sha512": "sha512-/Q+R0EcCJE8JaYCk+bGReicw/xrB0HhecrYrUcLbn95BnAlaTJrZhoLkUhvtKTAVtqX/AIKWXYtutiU/Q6QUgg==",
+      "path": "microsoft.testplatform.testhost/16.11.0",
+      "hashPath": "microsoft.testplatform.testhost.16.11.0.nupkg.sha512"
     },
-    "MSTest.TestFramework/2.2.10": {
+    "NETStandard.Library/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JZRVXKq19uRhkj8MuzsU8zJhPV2JV3ZToFPAIg+BU53L1L9mNDfm9jXerdRfbrE4HBcf2M54Ij80zPOdlha3+Q==",
-      "path": "mstest.testframework/2.2.10",
-      "hashPath": "mstest.testframework.2.2.10.nupkg.sha512"
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
     },
     "Newtonsoft.Json/9.0.1": {
       "type": "package",
@@ -733,12 +734,26 @@
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
     },
-    "NuGet.Frameworks/5.11.0": {
+    "NuGet.Frameworks/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eaiXkUjC4NPcquGWzAGMXjuxvLwc6XGKMptSyOGQeT0X70BUZObuybJFZLA0OfTdueLd3US23NBPTBb6iF3V1Q==",
-      "path": "nuget.frameworks/5.11.0",
-      "hashPath": "nuget.frameworks.5.11.0.nupkg.sha512"
+      "sha512": "sha512-c5JVjuVAm4f7E9Vj+v09Z9s2ZsqFDjBpcsyS3M9xRo0bEdm/LVZSzLxxNvfvAwRiiE8nwe1h2G4OwiwlzFKXlA==",
+      "path": "nuget.frameworks/5.0.0",
+      "hashPath": "nuget.frameworks.5.0.0.nupkg.sha512"
+    },
+    "NUnit/3.13.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u+fz/lXyR4vlamySNAEMrXvh+GhAQiB6/aVZtU5WjivR5zF26Ui0tfteDtWqT90k9D8y6g8rFKYQC97Z7d195w==",
+      "path": "nunit/3.13.2",
+      "hashPath": "nunit.3.13.2.nupkg.sha512"
+    },
+    "NUnit3TestAdapter/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5gCkytgQWL93M5s9Rnl4CfSUhn95VsuMVLYjmZe8K7dNRF7kzrBMPsBTyLNCga5qLW7RM/o591J+HVrV1QMaVQ==",
+      "path": "nunit3testadapter/4.0.0",
+      "hashPath": "nunit3testadapter.4.0.0.nupkg.sha512"
     },
     "System.Collections/4.0.11": {
       "type": "package",
@@ -973,11 +988,6 @@
     },
     "Pen/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions/14.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
