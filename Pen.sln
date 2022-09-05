@@ -5,9 +5,7 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pen", "Pen\Pen.csproj", "{F733AB41-56B7-4BFA-B882-54B33782EF78}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestsforPen", "TestsforPen\TestsforPen.csproj", "{C1D7EAD8-589B-4678-9B9B-CCC7D6C9F665}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest", "NUnitTest\NUnitTest.csproj", "{26FF8056-FDFF-47B0-A8CA-CDA71A88969C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTest", "NUnitTest\NUnitTest.csproj", "{26FF8056-FDFF-47B0-A8CA-CDA71A88969C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{F733AB41-56B7-4BFA-B882-54B33782EF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F733AB41-56B7-4BFA-B882-54B33782EF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F733AB41-56B7-4BFA-B882-54B33782EF78}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C1D7EAD8-589B-4678-9B9B-CCC7D6C9F665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1D7EAD8-589B-4678-9B9B-CCC7D6C9F665}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C1D7EAD8-589B-4678-9B9B-CCC7D6C9F665}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C1D7EAD8-589B-4678-9B9B-CCC7D6C9F665}.Release|Any CPU.Build.0 = Release|Any CPU
 		{26FF8056-FDFF-47B0-A8CA-CDA71A88969C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26FF8056-FDFF-47B0-A8CA-CDA71A88969C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26FF8056-FDFF-47B0-A8CA-CDA71A88969C}.Release|Any CPU.ActiveCfg = Release|Any CPU
